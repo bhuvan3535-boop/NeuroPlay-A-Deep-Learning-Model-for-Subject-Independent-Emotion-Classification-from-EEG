@@ -16,3 +16,16 @@ To solve this, I built a 1D-Convolutional Neural Network (CNN). Instead of being
 The 1D-CNN learns to identify the underlying temporal patterns of emotion that are common across all 28 subjects, making it a truly generalized and robust solution.
 
 The 1D-CNN was trained and evaluated using a rigorous Leave-One-Group-Out (LOGO) cross-validation. This means 28 separate models were trained, where each model was trained on 27 subjects and tested on the 1 subject it had never seen.
+Model                     Validation Method           Mean Accuracy
+Random Forest (Baseline)  Subject-Independent (LOGO)  39.26%
+1D-CNN (Final Model)      Subject-Independent (LOGO)  86.56%
+
+Core Technologies Used
+Python 3.x
+Google Colab (for GPU acceleration)
+TensorFlow / Keras: For building and training the 1D-CNN.
+MNE-Python: The core library for EEG signal processing and epoching.
+Scikit-learn: For the LOGO cross-validation, StandardScaler, and baseline RandomForestClassifier.
+Pandas & NumPy: For data manipulation.
+
+Seaborn & Matplotlib: For visualizing the final confusion matrix.
