@@ -28,3 +28,5 @@ MNE-Python: The core library for EEG signal processing and epoching.
 Scikit-learn: For the LOGO cross-validation, StandardScaler, and baseline RandomForestClassifier.
 Pandas & NumPy: For data manipulation.
 Seaborn & Matplotlib: For visualizing the final confusion matrix.
+
+***Database for Emotion Recognition System - GAMEEMO***
